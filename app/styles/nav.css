@@ -1,0 +1,12 @@
+#nav {
+    background-color: rgb(163, 243, 243);
+    display: flex;
+    list-style: none;
+}
+
+#nav a {
+    color:black;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+}
