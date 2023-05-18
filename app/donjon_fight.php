@@ -3,7 +3,9 @@
     require_once('./classes/Gobelin.php');
     require_once('./classes/DarkKnight.php');
     require_once('./classes/Desse.php');
-
+    require_once('./classes/Boss.php');
+    require_once('./classes/Boss2.php');
+    require_once('./classes/Sylas.php');
 
 
     require_once('functions.php');
@@ -19,17 +21,26 @@
     // On créé un combat s'il n'y en a pas encore
     if (!isset($_SESSION['fight']))
     {
-        $nb = random_int(0, 15);
+        $nb = random_int(0, 50);
 
-    if ($nb <= 8) {
-        $ennemi = new Gobelin();
-    } else if ($nb <= 13) {
-        $ennemi = new DarkKnight();
-    } else {
-        $ennemi = new Desse();
-    }
+        // if ($_GET['id'] == 5) {
+            if ($nb <= 15) {
+                $ennemi = new Boss2();
+            } else {
+                $ennemi = new Sylas();
+            }
+       /* } else {
+            if ($nb <= 8) {
+                $ennemi = new Gobelin();
+            } else if ($nb <= 13) {
+                $ennemi = new DarkKnight();
+            } else if ($nb <= 18) {
+                $ennemi = new Desse();
+            }
+        }*/
+        
 
-
+        var_dump($ennemi);
         $_SESSION['fight']['ennemi'] = $ennemi;
         $_SESSION['fight']['html'][] = "Vous tomber sur un " . $ennemi->name . '.';
     }
@@ -185,5 +196,11 @@
             </div>
         </div>
     </div>
+    <?php
+        if ($_SESSION['perso']['pdv'] <= 0) {
+            unset($_SESSION['perso']);
+            unset($_SESSION['fight']);
+        }
+    ?>
     </body>
 </html>

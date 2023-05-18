@@ -25,6 +25,16 @@
     }
 
 ?>
+<style>
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+</style>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -54,5 +64,15 @@
             <input type="submit" name="send" value="Connexion"/>
         </div>
     </form>
+
+    <style>
+        body {
+            background-image: url(img/assassins-creed-odyssey.jpg);
+            background-size: cover;
+        }
+    </style>
+    
 </body>
 </html>
+
+

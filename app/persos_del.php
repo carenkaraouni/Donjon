@@ -20,4 +20,4 @@
     ]);
 
 
-    header('Location: persos.php?msg=perso bien supprimé !');
+    header('Location: persos.php?msg=Votre perso a bien été supprimé !');

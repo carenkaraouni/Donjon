@@ -34,6 +34,12 @@ h2 {
     margin: 20px 0;
 }
 
+li{
+    width: 50px;
+    height: 50px;
+    background-color: aquamarine;
+}
+
 .btn {
     border: none;
     padding: 10px;
@@ -45,39 +51,39 @@ h2 {
 }
 
 .btn-grey {
-    background: rgb(135, 195, 222);
-    color: rgb(65, 107, 145);
+    background:rgb(205, 97, 85);
+    color: rgb(253, 254, 254);
 }
 
 .btn-grey:hover {
-    background-color: rgb(34, 83, 147);
+    background-color: rgb(245, 183, 177);
 }
 
 .btn-red {
-    background: rgb(128, 182, 215);
-    color: rgb(65, 114, 156);
+    background: rgb(123, 36, 28);
+    color: rgb(253, 254, 254);
 }
 
 .btn-red:hover {
-    background-color: rgb(230, 158, 158);
+    background-color: rgb(245, 183, 177);
 }
 
 .btn-green {
-    background: #c9edc9;
-    color: rgb(143, 208, 171);
+    background: rgb(245, 183, 177);
+    color: rgb(7, 7, 7);
 }
 
 .btn-green:hover {
-    background-color: rgb(7, 7, 7);
+    background-color: rgb(205, 97, 85);
 }
 
 .btn-blue {
-    background: lightblue;
-    color: rgb(120, 165, 204);
+    background: rgb(169, 50, 38);
+    color: rgb(253, 254, 254);
 }
 
 .btn-blue:hover {
-    background-color: lightskyblue;
+    background-color: rgb(2245, 183, 177);
 }
 
 .mt-2 {
@@ -94,4 +100,27 @@ h2 {
 
 .px-4 {
     padding: 0 2rem;
+}
+
+.w-60 {
+    width: 60%;
+}
+
+.small {
+    text-align: center;
+    font-size: .85rem;
+}
+
+.alert {
+    background: lightcoral;
+    color: aliceblue;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 10px;
+}
+
+.carte {
+    width: 50px;
+    height: 50px;
+    background-color: aquamarine;
 }

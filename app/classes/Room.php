@@ -5,7 +5,8 @@ class Room {
     private string $description;
     private string $type;
     private int $donjon_id;
-    private int $or; 
+    private int $or;
+    public string $picture;
 
     public function __construct($room)
     {
@@ -13,6 +14,7 @@ class Room {
         $this->description = $room['description'];
         $this->type = $room['type'];
         $this->donjon_id = $room['donjon_id'];
+        $this->picture = $room['picture'] ? $room['picture'] : "";
     }
 
     public function getName(): string
@@ -35,7 +37,7 @@ class Room {
         $this->description = $description;
     }
 
-    public function getHTML() : string
+    public function getHTML(): string
     {
         $html = "";
 
@@ -54,10 +56,11 @@ class Room {
                 $html .= "<a href='donjon_play.php?id=". $this->donjon_id ."' class='btn btn-blue'>Fuir et continuer l'exploration</a></p>";
                 break;
 
-                case 'test':
-                    $html .= "<p class='mt-4'><a href='donjon_fight.php?id=". $this->donjon_id ."' class='me-2 btn btn-green'>Combattre</a>";
-                    $html .= "<a href='donjon_play.php?id=". $this->donjon_id ."' class='btn btn-blue'>Fuir et continuer l'exploration</a></p>";
-                    break;
+            case 'test':
+                $html .= "<p class='mt-4'><a href='donjon_fight.php?id=". $this->donjon_id ."' class='me-2 btn btn-green'>Combattre</a>";
+                $html .= "<a href='donjon_play.php?id=". $this->donjon_id ."' class='btn btn-blue'>Fuir et continuer l'exploration</a></p>";
+                break;
+                
             
             default:
                 $html .= "<p>Aucune action possible !</p>";
@@ -69,7 +72,6 @@ class Room {
 
     public function makeAction(): void
     {
-
         switch ($this->type) {
             case 'vide':
                 break;
@@ -88,7 +90,10 @@ class Room {
             default:
                 break;
         }
-
     }
 
 }
+
+
+
+    

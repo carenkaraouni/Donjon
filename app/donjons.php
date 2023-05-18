@@ -26,9 +26,9 @@
         <?php echo $_SESSION['perso']['name']; ?> (<a href="persos.php">Changer</a>)
         <ul>
             <?php foreach($donjons as $donjon) { ?>
-                <li><a href="donjon_play.php?id=<?php echo $donjon['id']; ?>">
+               <div class="carte"> <li><a href="donjon_play.php?id=<?php echo $donjon['id']; ?>">
                     <?php echo $donjon['name']; ?>
-                </a></li>
+                </a></li></div>
             <?php } ?>
         </ul>
     </div>

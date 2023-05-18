@@ -14,6 +14,7 @@ class Gobelin extends Ennemi
         $this->speed = 7;
         $this->xp = 4;
         $this->gold = 10;
+        $this->photo = "Gripsec.png";
     }
 
     public function runaway()

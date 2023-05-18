@@ -27,10 +27,15 @@
 
 <h1>Détails du personnage</h1>
 
-<b>Nom:</b> <?php echo $perso['name']; ?>
-
+<b>Nom:</b> <?php echo $perso['name']; ?><br>
+<b>Point de vie :</b> <?php echo $perso['pdv']; ?><br>
+<b>Or :</b> <?php echo $perso['gold']; ?><br>
+<b>Force :</b> <?php echo $perso['for']; ?><br>
+<b>Intelligence :</b> <?php echo $perso['int']; ?><br>
+<b>Charisme :</b> <?php echo $perso['char']; ?><br>
+<b>Vitesse :</b> <?php echo $perso['vit']; ?><br>
 <div>
-    <a href="persos.php" class="btn">Retour</a>
+    <a href="persos.php" class="btn btn-red">Retour</a>
 </div>
 
 </body>

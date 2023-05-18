@@ -13,6 +13,7 @@ class DarkKnight extends Ennemi
         $this->speed = 5;
         $this->xp = 20;
         $this->gold = 100;
+        $this->photo = "autocollants-en-vinyle-de-fortnite-chevalier-noir.jpg";
     }
 
     public function fear()

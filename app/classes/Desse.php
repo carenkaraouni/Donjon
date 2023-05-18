@@ -13,6 +13,7 @@ class Desse extends Ennemi
         $this->speed = 8;
         $this->xp = 15;
         $this->gold = 50;
+        $this->photo = "pele02.jpg";
     }
 
     public function fear()

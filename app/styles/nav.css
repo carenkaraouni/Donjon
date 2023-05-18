@@ -1,11 +1,11 @@
 #nav {
-    background-color: rgb(163, 243, 243);
+    background-color: rgb(151, 112, 86);
     display: flex;
     list-style: none;
 }
 
 #nav a {
-    color:black;
+    color:hwb(0 98% 0%);
     text-decoration: none;
     padding: 10px;
     display: inline-block;

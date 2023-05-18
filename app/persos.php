@@ -23,7 +23,7 @@
 <?php require_once('_header.php'); ?>
 
     <h1>Vos personnages</h1>
-    <a href="persos_add.php">Créer un personnage</a>
+    <a href="persos_add.php">Créer un personnage </a>
 
     <?php if (isset($_GET['msg'])) {
         echo "<div>" . $_GET['msg'] . "</div>";
@@ -34,6 +34,12 @@
             <tr>
                 <td>ID</td>
                 <td>Nom</td>
+                <td>Point de vie</td>
+                <td>Or</td>
+                <td>Force</td>
+                <td>Intelligence</td>
+                <td>Charisme</td>
+                <td>Vitesse</td>
                 <td>Action</td>
             </tr>  
         </thead>
@@ -42,11 +48,24 @@
                 <tr>
                     <td><?php echo $perso['id']; ?></td>
                     <td><?php echo $perso['name']; ?></td>
-                    <td>
-                    <a 
-                            class="btn btn-grey"
-                            href="persos_choice.php?id=<?php echo $perso['id']; ?>" 
-                        >Choisir</a>
+                    <td><?php echo $perso['pdv']; ?></td>
+                    <td><?php echo $perso['gold']; ?></td>
+                    <td><?php echo $perso['for']; ?></td>
+                    <td><?php echo $perso['int']; ?></td>
+                    <td><?php echo $perso['char']; ?></td>
+                    <td><?php echo $perso['vit']; ?></td>
+                    <td align="right">
+                        <?php if ($perso['pdv'] > 0) { ?>
+                            <a 
+                                class="btn btn-grey"
+                                href="persos_choice.php?id=<?php echo $perso['id']; ?>" 
+                            >Choisir</a>
+                        <?php } else { ?>
+                            <a 
+                                class="btn btn-green"
+                                href="persos_respawn.php?id=<?php echo $perso['id']; ?>" 
+                            >Résussité</a>
+                        <?php } ?>
                         <a 
                             class="btn btn-grey"
                             href="persos_show.php?id=<?php echo $perso['id']; ?>" 
