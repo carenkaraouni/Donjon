@@ -20,14 +20,18 @@
 
     $donjons = $sth->fetchAll();
 ?>
+<style>
 
+</style>
 <?php require_once('_header.php'); ?>
     <div class="container">
         <?php echo $_SESSION['perso']['name']; ?> (<a href="persos.php">Changer</a>)
-        <ul>
+        <ul class= "carte">
             <?php foreach($donjons as $donjon) { ?>
-               <div class="carte"> <li><a href="donjon_play.php?id=<?php echo $donjon['id']; ?>">
-                    <?php echo $donjon['name']; ?>
+                
+               <div> <li class="rectangle"><a href="donjon_play.php?id=<?php echo $donjon['id']; ?>">
+               <img class="donjon" src="img/bandeau-cite-perdue-1600x807.jpg">
+                   <p  class="p" > <?php echo $donjon['name']; ?></p>
                 </a></li></div>
             <?php } ?>
         </ul>

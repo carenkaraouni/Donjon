@@ -15,12 +15,12 @@
         
             $sth->execute([
                 'name'      => $_POST['name'],
-                'for'       => 10,
+                'for'       => 15,
                 'dex'       => 10,
                 'int'       => 10,
                 'char'      => 10,
                 'vit'       => 10,
-                'pdv'       => 20,
+                'pdv'       => 30,
                 'user_id'   => $_SESSION['user']['id']
             ]);
 
@@ -28,6 +28,16 @@
         }
     }
 ?>
+
+<style>
+    
+    body{
+        background-color: rgb(245, 238, 248);
+        
+    }
+   
+  </style>
+
 
 <?php require_once('_header.php'); ?>
     <div class="container">

@@ -6,13 +6,13 @@ class Sylas extends Ennemi
 {
     public function __construct()
     {
-        $this->pol = 20;
+        $this->pol = 15;
         $this->name = "Syslas le demon";
-        $this->power = 30;
+        $this->power = 20;
         $this->constitution = 15;
         $this->speed = 10;
-        $this->xp = 30;
-        $this->gold = 200;
+        $this->xp = 20;
+        $this->gold = 150;
         $this->photo = "sylas.jpg";
     }
 

@@ -32,6 +32,26 @@
         justify-content: center;
         align-items: center;
         height: 100vh;
+      border: 1px solid black;
+      padding: 20px;
+      background: rgba(255,255,255, 0.5);
+      text-align: center;
+    font-size: 18px;
+      position: absolute; 
+      top: 50%; 
+      left: 50%;
+       transform: translate(-50%, -50%);
+       height: 250;
+       border-radius: 30px;
+
+    }
+    
+    input, select, textarea {
+      border: 1px solid gray;
+      padding: 5px;
+      margin-bottom: 10px;
+      border-radius: 30px;
+
     }
 </style>
 
@@ -61,7 +81,7 @@
             <input type="password" placeholder="Entrez votre mot de passe" name="password" id="password">
         </div>
         <div>
-            <input type="submit" name="send" value="Connexion"/>
+        <input type="submit" class="btn btn-green" name="send" value="Connexion" />
         </div>
     </form>
 

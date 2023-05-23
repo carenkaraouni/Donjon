@@ -15,6 +15,35 @@
     }
 
 ?>
+<style>
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      border: 1px solid black;
+      padding: 20px;
+      background: rgba(255,255,255, 0.5);
+      text-align: center;
+    font-size: 18px;
+      position: absolute; 
+      top: 50%; 
+      left: 50%;
+       transform: translate(-50%, -50%);
+       height: 250;
+       border-radius: 30px;
+
+    }
+    
+    input, select, textarea {
+        border: 1px solid gray;
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 30px;
+    }
+</style>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,6 +55,8 @@
 <body>
     <?php require_once('_header.php')?>
     <form action="" method="post">
+    <h1>Créer votre compte</h1>
+
         <div>
             <label for="email">Email</label>
             <input type="email" placeholder="Entrez votre email" name="email" id="email">
@@ -35,8 +66,14 @@
             <input type="password" placeholder="Entrez votre mot de passe" name="password" id="password">
         </div>
         <div>
-            <input type="submit" name="send" value="Créer"/>
+        <input type="submit" class="btn btn-green" name="send" value="Créer" />
         </div>
     </form>
+    <style>
+        body {
+            background-image: url(img/assassins-creed-odyssey.jpg);
+            background-size: cover;
+        }
+    </style>
 </body>
 </html>

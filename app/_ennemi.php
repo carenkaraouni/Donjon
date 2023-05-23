@@ -1,4 +1,4 @@
-<img src="img/<?php echo $_SESSION['fight']['ennemi']->photo; ?>" />
+<img src="img/<?php echo $_SESSION['fight']['ennemi']->photo; ?>" width=400px/>
 <h2><?php echo $_SESSION['fight']['ennemi']->name; ?></h2>
 <div>
     <b>Point de vie:</b> <?php echo $_SESSION['fight']['ennemi']->pol; ?></h2>

@@ -41,6 +41,12 @@
 
     $perso = $sth->fetch();
 ?>
+<style>
+    body{
+        background-color: rgb(245, 238, 248);
+        
+    }
+  </style>
 
 <?php require_once('_header.php'); ?>
 <div class="container">

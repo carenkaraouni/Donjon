@@ -21,10 +21,24 @@
     // On créé un combat s'il n'y en a pas encore
     if (!isset($_SESSION['fight']))
     {
-        $nb = random_int(0, 50);
+        $nb = random_int(0, 20);
+
+    if ($nb <= 5) {
+        $ennemi = new Gobelin();
+    } elseif ($nb <= 9) {
+        $ennemi = new DarkKnight();
+    } elseif ($nb === 12) {
+        $ennemi = new Desse();
+    } elseif ($nb === 14) {
+        $ennemi = new Boss();
+    } elseif ($nb === 17) {
+        $ennemi = new Boss2();
+    } else {
+        $ennemi = new Sylas();
+    } 
 
         // if ($_GET['id'] == 5) {
-            if ($nb <= 15) {
+           /* if ($nb <= 15) {
                 $ennemi = new Boss2();
             } else {
                 $ennemi = new Sylas();
@@ -40,7 +54,7 @@
         }*/
         
 
-        var_dump($ennemi);
+        /*var_dump($ennemi);*/
         $_SESSION['fight']['ennemi'] = $ennemi;
         $_SESSION['fight']['html'][] = "Vous tomber sur un " . $ennemi->name . '.';
     }

@@ -22,11 +22,20 @@
 
     $perso = $sth->fetch();
 ?>
+<style>
+    body{
+        background-color: rgb(245, 238, 248);
+    }
+    h1{
+        text-align: center;
+       /* font-family: Roboto Mono;*/
+    }
+  </style>
 
 <?php require_once('_header.php'); ?>
 
 <h1>Détails du personnage</h1>
-
+<div class="detail">
 <b>Nom:</b> <?php echo $perso['name']; ?><br>
 <b>Point de vie :</b> <?php echo $perso['pdv']; ?><br>
 <b>Or :</b> <?php echo $perso['gold']; ?><br>
@@ -37,6 +46,9 @@
 <div>
     <a href="persos.php" class="btn btn-red">Retour</a>
 </div>
+</div>
+
+<img class="imgdetail" src="img/Jin-Kazama-2.jpg"/>
 
 </body>
 </html>

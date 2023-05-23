@@ -20,4 +20,8 @@ class DarkKnight extends Ennemi
     {
 
     }
+    public function getPhotoHtml()
+    {
+        return "<img src=\"{$this->photo}\" style=\"width: 50px; height: auto;\" alt=\"Photo du Chevalier Noir\">";
+    }
 }
