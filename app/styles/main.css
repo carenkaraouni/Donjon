@@ -133,7 +133,7 @@ h2 {
 
 }
 .rectangle{
-    background-color: rgb(151, 112, 86);
+    background-color: rgb(204, 209, 209);
     list-style: none;
     border-width: 2px;
     border-style: solid;
@@ -143,8 +143,9 @@ h2 {
 }
 
 .imgdetail{
-    width: 300px;
-    margin-left: 400px;
+    width: 500px;
+    margin-left: 800px;
+    margin-top: -60px;
 }
 
 .detail{

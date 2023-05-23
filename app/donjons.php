@@ -25,7 +25,7 @@
 </style>
 <?php require_once('_header.php'); ?>
     <div class="container">
-        <?php echo $_SESSION['perso']['name']; ?> (<a href="persos.php">Changer</a>)
+        <?php echo $_SESSION['perso']['name']; ?> <a class="btn btn-green" href="persos.php">Changer</a>
         <ul class= "carte">
             <?php foreach($donjons as $donjon) { ?>
                 
